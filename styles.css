@@ -1,0 +1,59 @@
+h1 {
+  color: #00704A !important;
+}
+
+h2 {
+  font-size: 24px !important;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navli {
+  float: right;
+  font-size: 10px;
+}
+
+.navli a {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu {
+  text-align: center;
+  list-style-type: none;
+}
+
+.menu a {
+  all: unset;
+}
+
+.menu a:hover {
+  all: unset;
+}
+
+.sidebar {
+  background-color: #00704A;
+  color: white;
+}
+
+.stores {
+  list-style-type: none;
+}
+
+/* footer {
+    text-align: right;
+    padding: 5px;
+    color: gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  } */

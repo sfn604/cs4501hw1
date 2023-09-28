@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f561fcbdd3.js" crossorigin="anonymous"></script>
+    <title>Checkout</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+
+        <form autocomplete="off">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <input type="text" id="fname" name="fname" placeholder="First name"><br>
+                <label for="lname"> </label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="range" id="phone" min="0" max="9999999999" value="0"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>0</output><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Store Location</legend>
+                <input type="text" id="street" name="street" placeholder="Street Address"><br>
+                <label for="city"> </label><br>
+                <input type="text" id="city" name="city" placeholder="City"><br>
+                <label for="state"> </label><br>
+                <input type="text" id="state" name="state" placeholder="State"><br>
+                <label for="zip"> </label><br>
+                <input type="text" id="zip" name="zip" placeholder="Zip code"><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Payment</legend>
+                <label for="num1">Credit Card Number:</label> <br>
+                <select id="num1" name="num1">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=3>Three</option>
+                    <option value=6>Six</option>
+                    <option value=5>Five</option>
+                    <option value=2>Two</option>
+                    <option value=0>Zero</option>
+                    <option value=1>One</option>
+                    <option value=4>Four</option>
+                    <option value=7>Seven</option>
+                    <option value=9>Nine</option>
+                    <option value=8>Eight</option>
+                </select>
+
+                <select id="num2" name="num2">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=2>Two</option>
+                    <option value=1>One</option>
+                    <option value=7>Seven</option>
+                    <option value=9>Nine</option>
+                    <option value=0>Zero</option>
+                    <option value=8>Eight</option>
+                    <option value=5>Five</option>
+                    <option value=3>Three</option>
+                    <option value=6>Six</option>
+                    <option value=4>Four</option>
+                </select>
+
+                <select id="num3" name="num3">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=8>Eight</option>
+                    <option value=3>Three</option>
+                    <option value=5>Five</option>
+                    <option value=9>Nine</option>
+                    <option value=1>One</option>
+                    <option value=7>Seven</option>
+                    <option value=0>Zero</option>
+                    <option value=6>Six</option>
+                    <option value=2>Two</option>
+                    <option value=4>Four</option>
+                </select>
+
+                <select id="num4" name="num4">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=6>Six</option>
+                    <option value=2>Two</option>
+                    <option value=0>Zero</option>
+                    <option value=7>Seven</option>
+                    <option value=3>Three</option>
+                    <option value=5>Five</option>
+                    <option value=1>One</option>
+                    <option value=8>Eight</option>
+                    <option value=4>Four</option>
+                    <option value=9>Nine</option>
+                </select>
+
+                <select id="num5" name="num5">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=9>Nine</option>
+                    <option value=5>Five</option>
+                    <option value=2>Two</option>
+                    <option value=4>Four</option>
+                    <option value=6>Six</option>
+                    <option value=8>Eight</option>
+                    <option value=1>One</option>
+                    <option value=3>Three</option>
+                    <option value=7>Seven</option>
+                    <option value=0>Zero</option>
+                </select>
+
+                <select id="num6" name="num6">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=7>Seven</option>
+                    <option value=4>Four</option>
+                    <option value=6>Six</option>
+                    <option value=2>Two</option>
+                    <option value=3>Three</option>
+                    <option value=1>One</option>
+                    <option value=0>Zero</option>
+                    <option value=9>Nine</option>
+                    <option value=8>Eight</option>
+                    <option value=5>Five</option>
+                </select>
+
+                <select id="num7" name="num7">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=3>Three</option>
+                    <option value=5>Five</option>
+                    <option value=2>Two</option>
+                    <option value=0>Zero</option>
+                    <option value=9>Nine</option>
+                    <option value=8>Eight</option>
+                    <option value=6>Six</option>
+                    <option value=7>Seven</option>
+                    <option value=4>Four</option>
+                    <option value=1>One</option>
+                </select>
+
+                <select id="num8" name="num8">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=1>One</option>
+                    <option value=2>Two</option>
+                    <option value=0>Zero</option>
+                    <option value=5>Five</option>
+                    <option value=8>Eight</option>
+                    <option value=7>Seven</option>
+                    <option value=4>Four</option>
+                    <option value=9>Nine</option>
+                    <option value=6>Six</option>
+                    <option value=3>Three</option>
+                </select><br>
+
+                <select id="num9" name="num9">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=4>Four</option>
+                    <option value=2>Two</option>
+                    <option value=6>Six</option>
+                    <option value=7>Seven</option>
+                    <option value=8>Eight</option>
+                    <option value=3>Three</option>
+                    <option value=9>Nine</option>
+                    <option value=1>One</option>
+                    <option value=0>Zero</option>
+                    <option value=5>Five</option>
+                </select>
+
+                <select id="num10" name="num10">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=7>Seven</option>
+                    <option value=3>Three</option>
+                    <option value=4>Four</option>
+                    <option value=2>Two</option>
+                    <option value=1>One</option>
+                    <option value=5>Five</option>
+                    <option value=0>Zero</option>
+                    <option value=6>Six</option>
+                    <option value=8>Eight</option>
+                    <option value=9>Nine</option>
+                </select>
+
+                <select id="num11" name="num11">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=0>Zero</option>
+                    <option value=4>Four</option>
+                    <option value=2>Two</option>
+                    <option value=3>Three</option>
+                    <option value=5>Five</option>
+                    <option value=7>Seven</option>
+                    <option value=1>One</option>
+                    <option value=9>Nine</option>
+                    <option value=8>Eight</option>
+                    <option value=6>Six</option>
+                </select>
+
+                <select id="num12" name="num12">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=0>Zero</option>
+                    <option value=7>Seven</option>
+                    <option value=1>One</option>
+                    <option value=2>Two</option>
+                    <option value=8>Eight</option>
+                    <option value=4>Four</option>
+                    <option value=3>Three</option>
+                    <option value=6>Six</option>
+                    <option value=9>Nine</option>
+                    <option value=5>Five</option>
+                </select>
+
+                <select id="num13" name="num13">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=1>One</option>
+                    <option value=7>Seven</option>
+                    <option value=0>Zero</option>
+                    <option value=3>Three</option>
+                    <option value=8>Eight</option>
+                    <option value=2>Two</option>
+                    <option value=5>Five</option>
+                    <option value=6>Six</option>
+                    <option value=9>Nine</option>
+                    <option value=4>Four</option>
+                </select>
+
+                <select id="num14" name="num14">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=5>Five</option>
+                    <option value=4>Four</option>
+                    <option value=3>Three</option>
+                    <option value=0>Zero</option>
+                    <option value=6>Six</option>
+                    <option value=9>Nine</option>
+                    <option value=7>Seven</option>
+                    <option value=2>Two</option>
+                    <option value=8>Eight</option>
+                    <option value=1>One</option>
+                </select>
+
+                <select id="num15" name="num15">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=3>Three</option>
+                    <option value=7>Seven</option>
+                    <option value=0>Zero</option>
+                    <option value=1>One</option>
+                    <option value=5>Five</option>
+                    <option value=4>Four</option>
+                    <option value=2>Two</option>
+                    <option value=6>Six</option>
+                    <option value=8>Eight</option>
+                    <option value=9>Nine</option>
+                </select>
+
+                <select id="num16" name="num16">
+                    <option value="Select One" selected>Select One</option>
+                    <option value=8>Eight</option>
+                    <option value=1>One</option>
+                    <option value=7>Seven</option>
+                    <option value=2>Two</option>
+                    <option value=3>Three</option>
+                    <option value=6>Six</option>
+                    <option value=5>Five</option>
+                    <option value=4>Four</option>
+                    <option value=9>Nine</option>
+                    <option value=0>Zero</option>
+                </select><br>
+            </fieldset>
+            
+            <button type="reset" value="Reset" class="btn btn-success btn-sm"><i class="fa-solid fa-hippo"></i></button>
+        </form>
+
+        <a href="success.html"><button class="btn btn-danger btn-sm"><i class="fa-solid fa-truck-fast"></i></button></a><br>
+        <a href="order_details.html"><button class="btn btn-primary btn-sm"><i class="fa-solid fa-face-smile"></i></button></a>
+
+    </div>
+</body>
+
+</html>

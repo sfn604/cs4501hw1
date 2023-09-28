@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f561fcbdd3.js" crossorigin="anonymous"></script>
+    <title>Order Details</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Iced Latte</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="hot-latte.jpg" width="100%" />
+            </div>
+            <div class="col-lg-6">
+                <p>Introducing our signature Hot Latte - the epitome of warmth and indulgence in every sip. Crafted by our expert baristas, this elegant blend combines the finest, carefully selected espresso with velvety steamed milk, resulting in a rich, creamy drink that's sure to satisfy your coffee cravings.
+
+                    The foundation of our Hot Latte is our expertly brewed espresso, boasting a bold and aromatic profile that forms the heart of this delightful beverage. This robust espresso is perfectly complemented by the smooth texture of steamed milk, meticulously frothed to create a luxuriously creamy foam.
+                    
+                    With every sip, you'll experience the harmonious dance of bitter and sweet flavors, as the espresso's deep notes meld with the natural sweetness of the milk. The temperature is carefully calibrated to deliver a comforting warmth that soothes your senses and invigorates your day.
+                    
+                    Whether you're seeking a morning pick-me-up or a cozy afternoon treat, our Hot Latte is the embodiment of comfort, sophistication, and pure coffee pleasure. Elevate your coffee experience and embrace the comforting embrace of our Hot Latte – your go-to drink for those moments of pure caffeinated bliss.</p>
+
+                <form action="/action_page.php">
+                    <label for="size">Select One:</label> <br>
+                    <select id="size" name="size">
+                        <option value="Select One" selected>Select One</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+
+                    <br>
+
+                    <label for="milk">Select One:</label> <br>
+                    <select id="milk" name="milk">
+                        <option value="Select One" selected>Select One</option>
+                        <option value="Whole">Whole</option>
+                        <option value="Skim">Skim</option>
+                        <option value="Almond Milk">Almond Milk</option>
+                        <option value="Oat Milk">Oat Milk</option>
+                        <option value="Half & Half">Half & Half</option>
+                    </select>
+
+                    <br>
+
+                    <label for="flavor">Select One:</label> <br>
+                    <select id="flavor" name="flavor">
+                        <option value="Select One" selected>Select One</option>
+                        <option value="No Flavor">No Flavor</option>
+                        <option value="Sugar Free Vanilla">Sugar Free Vanilla</option>
+                        <option value="Peppermint">Peppermint</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Caramel">Caramel</option>
+                        <option value="Sugar Free Hazelnut">Sugar Free Hazelnut</option>
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Hazelnut">Hazelnut</option>
+                        <option value="Raspberry">Raspberry</option>
+                        <option value="Toffee Nut">Toffee Nut</option>
+                        <option value="Cinnamon Dolce">Cinnamon Dolce</option>
+                        <option value="Sugar Free Caramel">Sugar Free Caramel</option>
+                    </select>
+
+                    <br>
+                    <button type="reset" value="Reset" class="btn btn-primary btn-sm"><i
+                            class="fa-solid fa-hippo"></i></button>
+                </form>
+
+                <a href="hot.html"><button class="btn btn-danger btn-sm"><i
+                            class="fa-solid fa-face-smile"></i></button></a><br>
+                <a href="hot_payment.html"><button class="btn btn-success btn-sm"><i
+                            class="fa-solid fa-truck-fast"></i></button></a>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // function resetDropdowns() {
+        //     document.getElementById("size").selectedIndex = 0;
+        //     document.getElementById("milk").selectedIndex = 0;
+        //     document.getElementById("flavor").selectedIndex = 0;
+        // }
+    </script>
+
+</body>
+
+</html>

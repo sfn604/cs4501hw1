@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f561fcbdd3.js" crossorigin="anonymous"></script>
+    <title>Order Details</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Iced Latte</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="latte.avif" width="100%" />
+            </div>
+            <div class="col-lg-6">
+                <p>Introducing our refreshing Iced Latte, the perfect companion to beat the heat and invigorate your
+                    day. Crafted with the finest espresso and a smooth, creamy base, our Iced Latte is a delightful
+                    blend of robust flavors and cool indulgence.
+
+                    The journey begins with a double shot of freshly brewed, expertly pulled espresso, known for its
+                    bold and rich character. We carefully pour this velvety espresso over a generous amount of ice,
+                    allowing it to cool and infuse every sip with a satisfying chill.
+
+                    To achieve the ideal creamy texture and enhance the flavor, we add a generous portion of cold, silky
+                    milk. This creamy marriage of espresso and milk creates a harmonious balance, resulting in a
+                    beverage that is both smooth and refreshing.
+
+                    Our Iced Latte is a versatile canvas for customization. Whether you prefer it sweetened with a hint
+                    of syrup or enjoy it as is, it's the perfect canvas for personalization.
+
+                    Sip, savor, and stay refreshed with our Iced Latte - a taste of pure coffee bliss in every cool,
+                    revitalizing gulp. Experience the epitome of caffeinated enjoyment, reinvented for a chill,
+                    contemporary lifestyle.</p>
+
+                <form action="/action_page.php">
+                    <label for="size">Select One:</label> <br>
+                    <select id="size" name="size">
+                        <option value="Select One" selected>Select One</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+
+                    <br>
+
+                    <label for="milk">Select One:</label> <br>
+                    <select id="milk" name="milk">
+                        <option value="Select One" selected>Select One</option>
+                        <option value="Whole">Whole</option>
+                        <option value="Skim">Skim</option>
+                        <option value="Almond Milk">Almond Milk</option>
+                        <option value="Oat Milk">Oat Milk</option>
+                        <option value="Half & Half">Half & Half</option>
+                    </select>
+
+                    <br>
+
+                    <label for="flavor">Select One:</label> <br>
+                    <select id="flavor" name="flavor">
+                        <option value="Select One" selected>Select One</option>
+                        <option value="No Flavor">No Flavor</option>
+                        <option value="Sugar Free Vanilla">Sugar Free Vanilla</option>
+                        <option value="Peppermint">Peppermint</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Caramel">Caramel</option>
+                        <option value="Sugar Free Hazelnut">Sugar Free Hazelnut</option>
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Hazelnut">Hazelnut</option>
+                        <option value="Raspberry">Raspberry</option>
+                        <option value="Toffee Nut">Toffee Nut</option>
+                        <option value="Cinnamon Dolce">Cinnamon Dolce</option>
+                        <option value="Sugar Free Caramel">Sugar Free Caramel</option>
+                    </select>
+
+                    <br>
+                    <button type="reset" value="Reset" class="btn btn-primary btn-sm"><i
+                            class="fa-solid fa-hippo"></i></button>
+                </form>
+
+                <a href="cold.html"><button class="btn btn-danger btn-sm"><i
+                            class="fa-solid fa-face-smile"></i></button></a><br>
+                <a href="payment.html"><button class="btn btn-success btn-sm"><i
+                            class="fa-solid fa-truck-fast"></i></button></a>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function resetDropdowns() {
+            document.getElementById("size").selectedIndex = 0;
+            document.getElementById("milk").selectedIndex = 0;
+            document.getElementById("flavor").selectedIndex = 0;
+        }
+    </script>
+
+</body>
+
+</html>
